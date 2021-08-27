@@ -6,7 +6,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 import ErrorBoundaryFallback from './js/generic/ErrorBoundaryFallback';
 //components
 import LoadingIcon from './js/components/shared/loadingIcon/LoadingIcon';
-const TestComponent = lazy(() => import('./js/containers/TestComponent'));
+const ChartComponent = lazy(() => import('./js/containers/chart/Chart'));
 
 const App = () => (
 	<Suspense
@@ -23,7 +23,7 @@ const App = () => (
 				console.log('Try again clicked');
 			}}
 		>
-			<TestComponent />
+			<ChartComponent />
 		</ErrorBoundary>
 	</Suspense>
 );
