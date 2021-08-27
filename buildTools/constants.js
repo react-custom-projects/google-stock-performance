@@ -7,10 +7,10 @@ module.exports = {
 	jsSubDirectory: 'js/',
 	cssSubDirectory: 'css/',
 	metaInfo: {
-		title: 'Adam Morsi',
-		description: 'description',
+		title: 'Google stock performance',
+		description: 'React task for senior frontend engineer role.',
 		url: 'https://example.com/',
 		metaImageName: 'metaImage.jpg',
-		keywords: 'add you keywords',
+		keywords: 'google, stock, stock performance, chart',
 	},
 };
