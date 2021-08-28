@@ -5,6 +5,11 @@ class GoogleStockService {
 		return apiAlphaVantageService({
 			method: 'GET',
 			url: '',
+			params: {
+				function: 'TIME_SERIES_DAILY',
+				symbol: 'GOOGL',
+				apikey: process.env.ALPHA_VANTAGE_API_KEY,
+			},
 		});
 	}
 }
