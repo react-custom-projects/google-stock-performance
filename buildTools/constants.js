@@ -11,6 +11,6 @@ module.exports = {
 		description: 'React task for senior frontend engineer role.',
 		url: 'https://example.com/',
 		metaImageName: 'metaImage.jpg',
-		keywords: 'google, stock, stock performance, chart',
+		keywords: 'google, stock, stock performance, candleChart',
 	},
 };
