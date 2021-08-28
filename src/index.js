@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+//toast
+import 'react-toastify/dist/ReactToastify.css';
 //import meta image
 import './assets/images/metaImage.jpg';
 // required for babel polyfills
