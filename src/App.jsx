@@ -25,6 +25,7 @@ const App = () => (
 				console.log('Try again clicked');
 			}}
 		>
+			<h1>Google stock performance</h1>
 			<ChartComponent />
 		</ErrorBoundary>
 		<ToastContainer />
