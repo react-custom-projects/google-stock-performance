@@ -52,18 +52,18 @@ const CandleChart = () => {
 						customBreaks: data.reduce((acc, val, i, array) => {
 							if (i === 0) return acc;
 
-							const currentDataPointUnix = +new Date(val.date),
-								prevDataPointUnix = +new Date(val.date),
+							const currentPointUnix = +new Date(val.date),
+								prevPointUnix = +new Date(array[i - 1].date),
 								oneDayInMs = 86400000,
-								diff = prevDataPointUnix - currentDataPointUnix;
+								difference = prevPointUnix - currentPointUnix;
 
-							return diff === oneDayInMs
+							return difference === oneDayInMs
 								? acc
 								: [
 										...acc,
 										{
-											startValue: currentDataPointUnix,
-											endValue: prevDataPointUnix - oneDayInMs,
+											startValue: currentPointUnix,
+											endValue: prevPointUnix - oneDayInMs,
 										},
 								  ];
 						}, []),

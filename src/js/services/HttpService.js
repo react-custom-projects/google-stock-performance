@@ -1,10 +1,23 @@
 import axios from 'axios';
+//localforage
+import localForage from 'localforage';
+//cache adapter
+import { setupCache } from 'axios-cache-adapter';
 //toast
 import { toast } from 'react-toastify';
+
+const cache = setupCache({
+	maxAge: 60 * 60 * 1000,
+	store: localForage,
+	exclude: {
+		query: false,
+	},
+});
 
 const createNewBaseUrl = (url) =>
 	axios.create({
 		baseURL: url,
+		adapter: cache.adapter,
 	});
 
 const apiAlphaVantageService = createNewBaseUrl(process.env.API_URL);

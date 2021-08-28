@@ -66,9 +66,11 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
+		"axios-cache-adapter": "^2.7.3",
 		"canvasjs-react-charts": "^1.0.5",
 		"core-js": "^3.11.1",
 		"crypto-js": "^4.0.0",
+		"localforage": "^1.10.0",
 		"lodash": "^4.17.21",
 		"react-error-boundary": "^3.1.1",
 		"react-redux": "^7.2.4",
